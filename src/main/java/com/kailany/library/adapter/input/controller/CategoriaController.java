@@ -38,9 +38,15 @@ public class CategoriaController {
 
     @PutMapping("/{categoriaId}")
     @Transactional
-    public ResponseEntity atualizar(@PathVariable Long categoriaId, @RequestBody @Valid DadosCadastroCategoria dados,UriComponentsBuilder uriComponentsBuilder) throws ValidationException {
-        Categoria categoria = categoriaUseCase.atualizarCategoria(categoriaId, dados);
-        var uri = uriComponentsBuilder.path("/categorias/{id}").buildAndExpand(categoria.getId()).toUri();
-        return ResponseEntity.created(uri).build();
+    public ResponseEntity atualizar(@PathVariable Long categoriaId, @RequestBody @Valid DadosCadastroCategoria dados) throws ValidationException {
+        categoriaUseCase.atualizarCategoria(categoriaId, dados);
+        return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("/{categoriaId}")
+    @Transactional
+    public ResponseEntity remover(@PathVariable Long categoriaId) throws ValidationException {
+        categoriaUseCase.removerCategoria(categoriaId);
+        return ResponseEntity.ok().build();
     }
 }

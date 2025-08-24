@@ -34,4 +34,8 @@ public class CategoriaService {
     }
 
     public Categoria atualizarCategoria(Categoria categoria) { return categoriaRepository.save(categoria);}
+
+    public void removerCategoria(Long categoriaId) {
+        this.categoriaRepository.deleteById(categoriaId);
+    }
 }

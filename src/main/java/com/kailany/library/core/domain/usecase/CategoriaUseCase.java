@@ -40,4 +40,8 @@ public class CategoriaUseCase {
 
         return this.categoriaService.atualizarCategoria(categoria);
     }
+
+    public void removerCategoria(Long categoriaId) {
+        this.categoriaService.removerCategoria(categoriaId);
+    }
 }
