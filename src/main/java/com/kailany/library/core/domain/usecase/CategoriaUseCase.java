@@ -1,9 +1,9 @@
-package com.kailany.financeiro.core.domain.usecase;
+package com.kailany.library.core.domain.usecase;
 
-import com.kailany.financeiro.core.domain.model.categoria.Categoria;
-import com.kailany.financeiro.core.domain.model.categoria.DadosCadastroCategoria;
-import com.kailany.financeiro.core.domain.model.categoria.DadosListaCategorias;
-import com.kailany.financeiro.core.domain.services.CategoriaService;
+import com.kailany.library.core.domain.model.categoria.Categoria;
+import com.kailany.library.core.domain.model.categoria.DadosCadastroCategoria;
+import com.kailany.library.core.domain.model.categoria.DadosListaCategorias;
+import com.kailany.library.core.domain.services.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

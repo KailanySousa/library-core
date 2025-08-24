@@ -1,10 +1,9 @@
-package com.kailany.financeiro.adapter.input.controller;
+package com.kailany.library.adapter.input.controller;
 
-import com.kailany.financeiro.core.domain.model.categoria.Categoria;
-import com.kailany.financeiro.core.domain.model.categoria.DadosCadastroCategoria;
-import com.kailany.financeiro.core.domain.model.categoria.DadosDetalhesCategoria;
-import com.kailany.financeiro.core.domain.model.categoria.DadosListaCategorias;
-import com.kailany.financeiro.core.domain.usecase.CategoriaUseCase;
+import com.kailany.library.core.domain.model.categoria.Categoria;
+import com.kailany.library.core.domain.model.categoria.DadosCadastroCategoria;
+import com.kailany.library.core.domain.model.categoria.DadosDetalhesCategoria;
+import com.kailany.library.core.domain.usecase.CategoriaUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

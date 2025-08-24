@@ -1,4 +1,4 @@
-package com.kailany.financeiro.core.domain.model.categoria;
+package com.kailany.library.core.domain.model.categoria;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,6 +17,10 @@ public class Categoria {
     private Long id;
 
     private String nome;
+
+    private String descricao;
+
+    private String cor;
 
     public Categoria(DadosCadastroCategoria dados) {
         this.nome = dados.nome();

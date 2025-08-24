@@ -1,4 +1,4 @@
-package com.kailany.financeiro.core.domain;
+package com.kailany.library.core.domain;
 
 public class ValidacaoException extends RuntimeException {
     public ValidacaoException(String mensagem) {

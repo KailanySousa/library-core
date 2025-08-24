@@ -1,7 +1,7 @@
-package com.kailany.financeiro.core.domain.services;
+package com.kailany.library.core.domain.services;
 
-import com.kailany.financeiro.core.domain.model.categoria.Categoria;
-import com.kailany.financeiro.core.domain.repository.CategoriaRepository;
+import com.kailany.library.core.domain.model.categoria.Categoria;
+import com.kailany.library.core.domain.repository.CategoriaRepository;
 import jakarta.xml.bind.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.kailany.financeiro.core.domain.model.categoria;
+package com.kailany.library.core.domain.model.categoria;
 
 import jakarta.validation.constraints.NotBlank;
 
