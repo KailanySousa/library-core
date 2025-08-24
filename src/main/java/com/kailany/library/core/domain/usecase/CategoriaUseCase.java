@@ -23,6 +23,8 @@ public class CategoriaUseCase {
         Categoria categoria = Categoria
                 .builder()
                 .nome(dados.nome())
+                .descricao(dados.descricao())
+                .cor(dados.cor())
                 .build();
 
         return categoriaService.criarCategoria(categoria);
