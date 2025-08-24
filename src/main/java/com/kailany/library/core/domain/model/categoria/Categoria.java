@@ -7,6 +7,7 @@ import lombok.*;
 @Entity(name = "Categorias")
 @Builder
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")

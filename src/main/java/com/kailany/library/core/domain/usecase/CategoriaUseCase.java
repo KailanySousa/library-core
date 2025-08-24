@@ -4,6 +4,7 @@ import com.kailany.library.core.domain.model.categoria.Categoria;
 import com.kailany.library.core.domain.model.categoria.DadosCadastroCategoria;
 import com.kailany.library.core.domain.model.categoria.DadosListaCategorias;
 import com.kailany.library.core.domain.services.CategoriaService;
+import jakarta.xml.bind.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,5 +29,15 @@ public class CategoriaUseCase {
                 .build();
 
         return categoriaService.criarCategoria(categoria);
+    }
+
+    public Categoria atualizarCategoria(Long categoriaId, DadosCadastroCategoria dados) throws ValidationException {
+        Categoria categoria = this.categoriaService.buscarPorId(categoriaId);
+
+        categoria.setNome(dados.nome());
+        categoria.setDescricao(dados.descricao());
+        categoria.setCor(dados.cor());
+
+        return this.categoriaService.atualizarCategoria(categoria);
     }
 }
